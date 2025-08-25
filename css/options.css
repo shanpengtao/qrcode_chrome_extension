@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+    background-color: #f0f0f0;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+header {
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    border-left: 3px solid #c2d6e7;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    background-color: #f1f6f9;
+}
+
+.single-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.single-group-item {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.single-group-item input {
+    margin-bottom: 5px !important;
+}
+
+input[type="number"],
+input[type="color"] {
+    width: 200px;
+    height: 40px;
+    /* Fixed width for input fields */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 20px
+}
+
+button {
+    align-self: center;
+    background-color: #1890ff;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-button {
+    background-color: #fff;
+    color: #1890ff;
+    border: #1890ff solid 1px;
+}
+
+.segment-select {
+    /* 或指定具体宽度，如 300px */
+    width: 200px;
+    /* 高度 */
+    height: 40px;
+    /* 字体大小 */
+    font-size: 16px;
+    /* 内边距 */
+    padding: 5px;
+
+}
+
+.segment-select option {
+    /* 确保选项文字大小与下拉框一致 */
+    font-size: 16px !important;
+}
+
+select {
+    /* 移除默认样式 */
+    appearance: none;
+    /* 添加边框 */
+    border: 1px solid #ccc;
+    /* 设置背景色 */
+    background: #fff;
+}
+
+a {
+    color: #1890ff;
+    text-decoration: none;
+}

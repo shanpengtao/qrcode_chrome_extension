@@ -1,0 +1,31 @@
+{
+	"manifest_version": 3,
+	"name": "二维码生成器",
+	"description": "用于生成58同城、58好借、58本地版、安居客专属二维码",
+	"version": "1.0.0",
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"permissions": ["scripting", "activeTab", "tabs", "storage"],
+	"host_permissions": ["<all_urls>"],
+	"background": {
+		"service_worker": "js/background.js"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": ["images/*"],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"options_ui": {
+		"page": "options.html",
+		"open_in_tab": true
+	},
+	"icons": {
+		"16": "images/icon.png",
+		"32": "images/icon.png",
+		"48": "images/icon.png",
+		"128": "images/icon.png"
+	},
+	"homepage_url": "https://igit.58corp.com/58finance_fe/qrcode_chrome_extension"
+}

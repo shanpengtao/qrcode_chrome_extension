@@ -1,0 +1,166 @@
+body {
+    width: 270px;
+    height: auto;
+    text-align: center;
+    background-image: url('../images/bg.jpg');
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+textarea {
+    border: 1px dotted silver;
+    width: 100%;
+    resize: vertical;
+    height: 56px;
+    min-height: 56px;
+    max-height: 103px;
+}
+
+#qr-code {
+    /* width: 200px; */
+    margin: 10px 0;
+    display: inline-table
+}
+
+#download-btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    cursor: pointer
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1890ff;
+    font-size: 14px;
+    line-height: 1px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 20px;
+}
+
+.copyright {
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.symbol {
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid dodgerblue;
+
+    .title-icon {
+        width: 35px;
+        margin-left: 10px;
+        background: url('../images/logo.png') no-repeat;
+        background-size: 100% 100%;
+    }
+
+    span {
+        color: #1890ff;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: left;
+        margin-left: 10px;
+    }
+}
+
+#shortLink {
+    color: #1890ff;
+    background-color: #e8f6fc;
+    font-size: medium;
+    padding: 5px
+}
+
+#shortLink a {
+    color: #1890ff
+}
+
+.text-area {
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+/* tab */
+.segment-controller {
+    /* 禁用文字选择 */
+    user-select: none;
+    /* 针对 WebKit 浏览器优化 */
+    -webkit-user-select: none;
+    /* 针对旧版 IE 浏览器优化 */
+    -ms-user-select: none;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-x: auto;
+    /* 防止子元素缩小 */
+    flex-shrink: 0;
+    /* 优化水平滑动行为 */
+    touch-action: pan-x;
+
+    /* 隐藏滚动条 */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.segment {
+    position: relative;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+    /* 防止内容换行 */
+    white-space: nowrap;
+}
+
+.segment.active {
+    background-color: #1890ff;
+    color: #fff;
+}
+
+.disabled-segment {
+    /* 禁用点击行为 */
+    pointer-events: none;
+    /* 修改样式表示禁用状态 */
+    opacity: 0.5;
+    /* 调整样式以表示禁用状态 */
+    /* 字体颜色 */
+    color: gray;
+}
+
+.with-after::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    background: #ccc;
+}
+
+#content {
+    margin-top: 20px;
+    text-align: center;
+}

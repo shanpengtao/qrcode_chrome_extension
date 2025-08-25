@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>二维码生成器</title>
+		<link rel="stylesheet" href="css/popup.css" />
+		<script src="js/qrcode.min.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/meishi.js"></script>
+		<script src="js/html2canvas.js"></script>
+	</head>
+
+	<body>
+		<h2 class="title">
+			<div class="title-icon"></div>
+			<span>二维码小工具</span>
+		</h2>
+		<div class="text-area">
+			<textarea id="input-text" rows="4"></textarea>
+		</div>
+		<div id="segment-container" class="segment-controller"></div>
+		<canvas id="qr-code"></canvas>
+		<!-- 后续可以添加生成短链的逻辑 -->
+		<!-- <div id="shortLink">Loading..</div> -->
+		<hr />
+		<button id="download-btn" class="download-btn">下载二维码</button>
+		<hr />
+		<footer>
+			<div class="footer">
+				<a href="https://github.com/shanpengtao" target="_blank">🏠 Home</a>
+				<span class="copyright"> | </span>
+				<a href="#" target="_blank" id="contact-link"
+					><span class="symbol">✉</span> Contact</a
+				>
+				<span class="copyright"> | </span>
+				<a href="options.html" target="_blank"
+					><span class="symbol">⚙</span>Options</a
+				>
+			</div>
+		</footer>
+	</body>
+</html>

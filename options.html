@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=0,viewport-fit=cover"
+		/>
+		<link rel="stylesheet" href="css/options.css" />
+		<title>二维码工具设置页面</title>
+		<script src="js/meishi.js"></script>
+		<script src="js/options.js"></script>
+		<script src="js/background.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>二维码工具设置页面</h1>
+		</header>
+		<div class="container">
+			<form id="options-form">
+				<div class="form-group">
+					<label for="width">二维码中间是否展示logo:</label>
+					<div class="single-group">
+						<div class="single-group-item">
+							<input
+								type="radio"
+								checked
+								id="option1"
+								name="showLogo"
+								value="1"
+							/>
+							<label for="option1">是</label>
+						</div>
+						<div class="single-group-item">
+							<input type="radio" id="option2" name="showLogo" value="0" />
+							<label for="option2">否</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="color">二维码颜色:</label>
+					<input type="color" id="color" value="#000000" />
+				</div>
+
+				<div class="form-group">
+					<label for="eclevel">二维码纠错等级: </label>
+					<select id="eclevel" class="segment-select">
+						<option value="L">L - Low(7%)</option>
+						<option value="M" selected="true">M - Mediumn(15%)</option>
+						<option value="Q">Q - Quartile(25%)</option>
+						<option value="H">H - High(30%)</option>
+					</select>
+				</div>
+
+				<!-- <div class="form-group">
+					<label for="which-app-select">默认选择哪一个app: </label>
+					<select id="which-app-select" class="segment-select"></select>
+				</div> -->
+				<div class="buttons">
+					<button type="submit" id="submit">保存</button>
+					<button type="reset" id="reset" class="reset-button">重置</button>
+				</div>
+			</form>
+		</div>
+		<footer>
+			如有问题可联系：<a href="mailto:shanpengtao@vip.qq.com" id="contact"
+				>Wayne</a
+			>
+		</footer>
+	</body>
+</html>
